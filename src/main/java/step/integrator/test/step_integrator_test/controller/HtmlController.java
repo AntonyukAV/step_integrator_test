@@ -46,7 +46,7 @@ public class HtmlController {
 
     @ExceptionHandler(IllegalRequestParametersException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
-    public String handleIoException(IllegalRequestParametersException ex, Model model) {
+    public String handleIllegalInputParameters(IllegalRequestParametersException ex, Model model) {
         model.addAttribute("message", ex.getMessage());
         logWriter.fail(400, ex.getPhone(), ex.getEmail());
         return "fail";
@@ -54,8 +54,8 @@ public class HtmlController {
 
     @ExceptionHandler(FailedToFetchDataException.class)
     @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
-    public String handleIoException(FailedToFetchDataException ex,  Model model) {
-        model.addAttribute("message", "Couldn't fetch data from rest service");
+    public String handleFailedFetchData(FailedToFetchDataException ex,  Model model) {
+        model.addAttribute("message", ex.getMessage());
         logWriter.fail(500, ex.getPhone(), ex.getEmail());
         return "fail";
     }
