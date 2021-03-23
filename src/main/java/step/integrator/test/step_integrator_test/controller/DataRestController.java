@@ -12,6 +12,9 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
 
+/**
+ * Controller for requests of log information from DB
+ */
 @RestController
 @RequestMapping("/log")
 public class DataRestController {

@@ -6,6 +6,9 @@ import step.integrator.test.step_integrator_test.entity.RequestLog;
 
 import java.time.LocalDateTime;
 
+/**
+ * Component for saving logs of successful and failed requests to DB
+ */
 @Component
 public class LogWriter {
 

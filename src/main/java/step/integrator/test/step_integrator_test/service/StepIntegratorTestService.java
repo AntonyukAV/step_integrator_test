@@ -11,6 +11,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Service for getting username by email or by phone number.
+ */
 @Service
 public class StepIntegratorTestService {
 

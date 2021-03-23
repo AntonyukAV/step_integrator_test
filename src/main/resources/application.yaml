@@ -1,4 +1,5 @@
 spring:
+#configuring connection to postgre db on localhost
   datasource:
     url: jdbc:postgresql://localhost:5432/step_db
     username: postgres
@@ -7,6 +8,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
+#logpass for browser basic authentication
   security:
     user:
       name: step

@@ -10,6 +10,10 @@ import step.integrator.test.step_integrator_test.exception.IllegalRequestParamet
 import step.integrator.test.step_integrator_test.repo.LogWriter;
 import step.integrator.test.step_integrator_test.service.StepIntegratorTestService;
 
+/**
+ * Controller for requests for getting username by phone number or email.
+ * Contains poor input parameters validation and exception handling.
+ */
 @Controller
 @RequestMapping(value = "/step")
 public class HtmlController {

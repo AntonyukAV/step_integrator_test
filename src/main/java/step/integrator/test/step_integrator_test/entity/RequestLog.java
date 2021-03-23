@@ -3,6 +3,9 @@ package step.integrator.test.step_integrator_test.entity;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+/**
+ * Entity class represents one GET request for username in database log
+ */
 @Entity
 @Table(name = "request_log")
 public class RequestLog {

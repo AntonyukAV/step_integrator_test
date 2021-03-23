@@ -1,5 +1,8 @@
 package step.integrator.test.step_integrator_test.exception;
 
+/**
+ * Exception represents illegal set of input parameters of GET request
+ */
 public class IllegalRequestParametersException extends Exception {
 
     private final String phone;

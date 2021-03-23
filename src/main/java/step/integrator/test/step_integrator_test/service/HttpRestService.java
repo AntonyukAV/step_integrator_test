@@ -12,6 +12,9 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 
+/**
+ * Service for getting users data from outer REST service by HTTP
+ */
 @Service
 public class HttpRestService {
 

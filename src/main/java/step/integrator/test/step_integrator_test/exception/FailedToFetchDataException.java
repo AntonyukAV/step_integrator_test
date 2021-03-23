@@ -1,5 +1,8 @@
 package step.integrator.test.step_integrator_test.exception;
 
+/**
+ * Exception represents failures while getting users data from outer REST service
+ */
 public class FailedToFetchDataException extends Exception {
 
     private final String phone;
